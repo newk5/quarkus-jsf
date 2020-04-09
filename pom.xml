@@ -74,6 +74,11 @@
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>${compiler-plugin.version}</version>
+          <configuration>
+            <source>1.8</source>
+            <target>1.8</target>
+            <verbose>true</verbose>
+        </configuration>
       </plugin>
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
@@ -107,8 +112,6 @@
                                 </goals>
                                 <configuration>
                                     <enableHttpUrlHandler>true</enableHttpUrlHandler>
-                                     <additionalBuildArgs>--allow-incomplete-classpath</additionalBuildArgs>
-
                                 </configuration>
                             </execution>
                         </executions>
