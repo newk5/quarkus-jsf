@@ -9,7 +9,7 @@ public class StartupListener implements ServletContextListener {
 
     @Override
     public void contextInitialized(ServletContextEvent sce) {
-        sce.getServletContext().setInitParameter("primefaces.THEME", "luna-amber");
+        sce.getServletContext().setInitParameter("primefaces.THEME", "vela");
     }
 
 }
